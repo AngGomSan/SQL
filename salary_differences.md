@@ -38,3 +38,5 @@ SELECT ABS((SELECT MAX(salary)
 salary_diff
 2400
 ```
+
+*From StrataScratch coding questions.*
