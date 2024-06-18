@@ -39,4 +39,4 @@ salary_diff
 2400
 ```
 
-*From StrataScratch coding questions.*
+<sub>*From StrataScratch coding questions.*</sub>
