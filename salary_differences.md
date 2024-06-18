@@ -6,16 +6,16 @@
 
 **db_employee**
 
-id: int
-first_name: varchar
-last_name: varchar
-salary: int
-department_id: int
+- id: int
+- first_name: varchar
+- last_name: varchar
+- salary: int
+- department_id: int
 
 **db_dept**
 
-id: int
-department: varchar
+- id: int
+- department: varchar
 
 **Query:**
 
@@ -34,5 +34,7 @@ SELECT ABS((SELECT MAX(salary)
 
 **Output:**
 
+```
 salary_diff
 2400
+```
