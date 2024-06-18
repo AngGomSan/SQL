@@ -1,4 +1,4 @@
-###Salary Differences###
+## Salary Differences
 
 **Goal:** Calculate the difference between the highest salaries found in the marketing and engineering departments and output just the absolute difference.
 
