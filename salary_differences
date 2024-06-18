@@ -1,8 +1,8 @@
-A query that calculates the difference between the highest salaries found in the marketing and engineering departments and outputs just the absolute difference.
+**Goal:** Calculate the difference between the highest salaries found in the marketing and engineering departments and output just the absolute difference.
 
-Tables: db_employee, db_dept
+**Tables:** db_employee, db_dept
 
-db_employee
+**db_employee**
 
 id: int
 first_name: varchar
@@ -10,13 +10,14 @@ last_name: varchar
 salary: int
 department_id: int
 
-db_dept
+**db_dept**
 
 id: int
 department: varchar
 
-Query:
+**Query:**
 
+```
 SELECT ABS((SELECT MAX(salary)
             FROM db_employee AS e
             JOIN db_dept AS d
@@ -27,8 +28,9 @@ SELECT ABS((SELECT MAX(salary)
             JOIN db_dept AS d
             ON e.department_id = d.id
             WHERE department = 'marketing')) AS salary_diff;
+```
 
-Output:
+**Output:**
 
 salary_diff
 2400
